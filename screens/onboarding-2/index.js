@@ -59,9 +59,9 @@ const styles = StyleSheet.create({
     marginBottom: 5
   },
   imgContainer: {
-    height: 460,
+    height: 214,
     width: 343,
-    backgroundColor: "#E5E5EA",
+    backgroundColor: "#15159a",
     borderRadius: 10,
     alignSelf: "center"
   }
