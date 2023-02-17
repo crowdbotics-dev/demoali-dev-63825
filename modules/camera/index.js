@@ -56,8 +56,8 @@ const Camera = () => {
         });
       }
     }} />
-      <TouchableOpacity onPress={() => actionSheet.current.show()} style={styles.photoBtn}>
-        <Text style={styles.photoBtnTxt}>{buttonText}</Text>
+      <TouchableOpacity onPress={() => actionSheet.current.show()} style={styles?.photoBtn}>
+        <Text style={styles?.photoBtnTxt}>{buttonText}</Text>
       </TouchableOpacity>
     </View>;
 };
