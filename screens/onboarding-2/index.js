@@ -1,7 +1,9 @@
 import React from "react";
 import { Text, View, StyleSheet, ScrollView, Image, Pressable } from "react-native";
 
-const Onboarding2 = () => {
+const Onboarding2 = ({
+  navigation
+}) => {
   return <ScrollView style={styles.container}>
       <View style={styles.header}>
         <Image source={require("./assets/back.png")} style={styles.back} />
@@ -49,7 +51,9 @@ const styles = StyleSheet.create({
     fontSize: 30,
     marginHorizontal: 25,
     marginTop: 10,
-    marginBottom: 10
+    marginBottom: 10,
+    width: 293,
+    height: 36
   },
   descContainer: {
     paddingHorizontal: 25
@@ -59,8 +63,8 @@ const styles = StyleSheet.create({
     marginBottom: 5
   },
   imgContainer: {
-    height: 214,
-    width: 343,
+    height: 163,
+    width: 244,
     backgroundColor: "#15159a",
     borderRadius: 10,
     alignSelf: "center"
@@ -74,10 +78,12 @@ const Button = params => {
     borderWidth: 1
   };
   const btnText = {
-    color: params.outline ? "#000" : "#fff"
+    color: params.outline ? "#000" : "#fff",
+    width: 135,
+    height: 27
   };
   return <View style={buttonStyles.btnContainer}>
-      <Pressable style={[buttonStyles.btn, btnStyle]} onPress={params.onPress}>
+      <Pressable style={[buttonStyles.btn, btnStyle]} onPress={() => navigation.navigate("Camera", {})}>
         <Text style={[buttonStyles.btnText, btnText]}>{params.buttonText}</Text>
         <View style={styles.childrenContainer}>{params.children}</View>
       </Pressable>
