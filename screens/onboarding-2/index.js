@@ -15,9 +15,7 @@ const Onboarding2 = ({
       </View>
       <Text style={styles.title}>Onboarding</Text>
       <View style={styles.descContainer}>
-        <Text style={styles.desc}>
-          There is no better advertisement  campaign that’s is low and also successful at the same time. Great business ideas.
-        </Text>
+        <Text style={styles.desc}>There is no better way to go about doing this stuff!</Text>
       </View>
       <Button buttonText={"Get started"} />
     </ScrollView>;
