@@ -11,6 +11,7 @@ const Onboarding2 = ({
         <Image source={require("./assets/slide.png")} style={styles.slide} />
         <Text />
       </View>
+      
 
       <View style={styles.imgContainer}>
       <ImageBackground style={styles.ebpuZnct} source={require("./photo-1596387451750-f7bfb51461ef.jpg")} resizeMode="cover"></ImageBackground></View>
@@ -60,7 +61,8 @@ const styles = StyleSheet.create({
   desc: {
     color: "#757575",
     marginBottom: 5,
-    textAlign: "center"
+    textAlign: "center",
+    position: "absolute"
   },
   imgContainer: {
     height: 163,
@@ -70,11 +72,13 @@ const styles = StyleSheet.create({
     alignSelf: "center"
   },
   ebpuZnct: {
-    width: 314,
-    height: 185,
-    top: -11,
-    left: -35,
-    position: "absolute"
+    width: 244,
+    height: 164,
+    top: 0,
+    left: 0,
+    position: "absolute",
+    transform: "rotate(0deg)",
+    zIndex: -11
   }
 });
 
