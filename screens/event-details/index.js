@@ -1,7 +1,10 @@
 import React, { useState, useEffect } from "react";
 import { Text, View, StyleSheet, ScrollView, Image, Pressable } from "react-native";
 
-const EventDetails = () => {
+const EventDetails = ({
+  route
+}) => {
+  const {} = route.params || {};
   const [event, setEvent] = useState({});
   useEffect(() => {
     setEvent({
@@ -15,7 +18,7 @@ const EventDetails = () => {
   }, []);
   return <View style={styles.container}>
       <ScrollView>
-        <Image source={require("./assets/image.png")} style={styles.image} />
+        <Image source={require("./photo-1596387451750-f7bfb51461ef.jpg")} style={styles.image} />
         <Image style={styles.scroller} source={require("./assets/Slider.png")} />
         <View style={styles.body}>
           <View style={styles.header}>
