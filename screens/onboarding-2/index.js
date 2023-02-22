@@ -70,8 +70,11 @@ const styles = StyleSheet.create({
     alignSelf: "center"
   },
   ebpuZnct: {
-    width: 278,
-    height: 173
+    width: 314,
+    height: 185,
+    top: -11,
+    left: -35,
+    position: "absolute"
   }
 });
 
